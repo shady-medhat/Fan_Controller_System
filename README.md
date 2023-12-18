@@ -29,12 +29,17 @@ Layered Architecture: Organize the project using a layered architecture model fo
 
 # Development Environment
 IDE: Developed using Eclipse.
+
 Microcontroller: ATmega32.
+
 Programming Language: C.
 # ADC Driver Requirements
 ADC Driver: Implement a full ADC driver with a polling design.
+
 Configuration Structure: Modify the ADC_init function to accept a configuration structure, ADC_ConfigType.
+
 Configuration Structure: Define the ADC_ConfigType structure with fields for reference voltage and prescaler settings.
+
 ADC Configuration: Configure the ADC to use an internal reference voltage of 2.56V and a prescaler of F_CPU/128.
 # GPIO Driver Requirements
 GPIO Driver: Utilize the GPIO driver implemented in the course for general-purpose input/output operations.
@@ -42,14 +47,19 @@ GPIO Driver: Utilize the GPIO driver implemented in the course for general-purpo
 LCD Driver: Use the LCD driver implemented for a 2x16 display with a 4-bit data mode to display temperature and fan state.
 # Temperature Sensor Driver Requirements
 Temperature Sensor Driver: Implement the temperature sensor driver as taught in the course.
+
 Sensor Connection: Connect the LM35 temperature sensor to ADC channel 0.
 # DC-Motor Driver Requirements
 DC-Motor Driver: Implement a comprehensive DC-Motor driver.
+
 Initialization: Create an DcMotor_Init function that initializes the motor and stops it initially.
+
 Control: Develop a DcMotor_RotateWithControl function that rotates the motor clockwise (CW), counter-clockwise (CCW), or stops it based on the state input and speed.
+
 Additional Control: Optionally, create a DcMotor_RotateWithoutControl function that allows the motor to rotate at maximum speed or stop without specific control.
 # PWM Driver Requirements
 PWM Driver: Utilize the PWM Timer0 function implemented in the course to control the DC motor's speed.
+
 PWM Configuration: Implement a PWM_Timer0_Start function to configure Timer0 for PWM mode. This function should set the PWM mode, prescaler, duty cycle, and pin direction for controlling the motor's speed.
 # Acknowledgments
 The inspiration for this project came from this video tutorial.
