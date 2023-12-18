@@ -16,10 +16,15 @@ Display: Display the temperature on an LCD.
 Fan Speed Control: Control the fan speed based on temperature as follows:
 
 Below 30°C: Turn off the fan.
+
 30-59°C: Run the fan at 25% speed.
+
 60-89°C: Run the fan at 50% speed.
+
 90-119°C: Run the fan at 75% speed.
+
 Above 120°C: Run the fan at 100% speed.
+
 Layered Architecture: Organize the project using a layered architecture model for modularity and maintainability.
 
 # Development Environment
